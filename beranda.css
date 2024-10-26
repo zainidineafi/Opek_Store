@@ -1,0 +1,195 @@
+body {
+  background-color: #290e42;
+}
+
+/* Styling untuk section banner-custom */
+.banner-custom {
+  width: 100%; /* Lebar penuh untuk section */
+  max-width: 1200px; /* Ukuran maksimal untuk section */
+  height: 400px; /* Tinggi tetap untuk banner */
+  margin: 50px auto; /* Jarak atas 50px, center otomatis kiri-kanan */
+  position: relative; /* Untuk posisi arrow navigasi */
+  overflow: hidden; /* Menghindari konten keluar dari section */
+  background-color: #f1f1f1; /* Background warna untuk banner */
+}
+
+/* Styling untuk carousel-container */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling untuk carousel-slide */
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Menyesuaikan gambar agar selalu memenuhi container */
+}
+
+/* Navigasi panah (previous & next) */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Styling untuk dots navigasi */
+.dots {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot:hover,
+.dot.active {
+  background-color: white;
+}
+
+/* Styling untuk section card-custom */
+.card-custom {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Membuat cards menjadi responsif */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Styling untuk setiap card */
+.card {
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Gradient background */
+  border-radius: 15px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan yang lebih halus */
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+/* Efek hover pada card */
+.card:hover {
+  transform: translateY(-10px) scale(1.02); /* Efek hover angkat dan skala */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* Bayangan saat hover */
+}
+
+/* Gambar di dalam card */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s; /* Transisi untuk efek zoom */
+}
+
+/* Efek zoom pada gambar saat hover */
+.card:hover img {
+  transform: scale(1.1); /* Zoom gambar */
+}
+
+/* Info Card */
+.card-info {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Judul Card */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  position: relative;
+  transition: color 0.3s; /* Transisi untuk warna judul */
+}
+
+/* Garis bawah judul saat hover */
+.card-title:hover {
+  color: #ff4c4c; /* Warna saat hover */
+}
+
+.card-title:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #ff4c4c; /* Warna garis bawah */
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Jarak garis bawah dari judul */
+}
+
+/* Styling untuk price tag */
+.price-tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #ff4c4c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .card-custom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%; /* Membuat cards lebar penuh di layar kecil */
+    max-width: 300px;
+  }
+}
+
+/* Section title untuk judul */
+.section-title {
+  text-align: center;
+  margin: 30px auto 0 auto;
+}
+
+.section-title h2 {
+  font-size: 24px;
+  color: #ff6b00;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+}

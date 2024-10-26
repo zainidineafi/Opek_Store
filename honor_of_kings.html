@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda - Opeks Store</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="beranda.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="honor_of_kings.css" />
+
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="beranda.html">Opeks Store</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto justify-content-center mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="beranda.html">
+                <i class="fas fa-home"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="produk.html">
+                <i class="fas fa-box-open"></i> Product
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="transaksi.html">
+                <i class="fas fa-receipt"></i> Transaction
+              </a>
+            </li>
+          </ul>
+          <a class="btn btn-outline-light me-2" href="login.html">Login</a>
+          <a class="btn btn-daftar" href="daftar.html">Register</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="banner">
+      <div class="banner-content">
+        <img
+          src="images/banner_hok.jpg"
+          alt="Banner Image"
+          class="banner-image"
+        />
+        <div class="banner-overlay">
+          <div class="promo-text">
+            <span>TOP UP DIAMOND KILAT</span>
+            <p>PROSES CEPAT!</p>
+            <a href="https://www.opekstore.com" class="cta-button"
+              >HANYA DI OPEKSTORE.COM</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="game-details">
+        <img
+          src="foto game/hok-icon.jpg"
+          alt="Mobile Legends"
+          class="game-thumbnail"
+        />
+        <div class="game-info">
+          <h2>HONOR OF KINGS</h2>
+          <p>Garena</p>
+          <div class="game-features">
+            <span>⚡ Proses Cepat</span>
+            <span>🎧 Layanan Chat 24/7</span>
+            <span>💎 Diamonds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="account-data">
+      <div class="account-header"><span>1</span> Masukkan Data Akun</div>
+
+      <div class="account-form">
+        <div class="form-group">
+          <label for="account-id">ID</label>
+          <input type="text" id="account-id" placeholder="Ketikan ID" />
+        </div>
+
+        <div class="form-group">
+          <label for="server-id">Server</label>
+          <input type="text" id="server-id" placeholder="Ketikan Server" />
+        </div>
+      </div>
+
+      <div class="account-info">
+        <p>
+          Untuk menemukan ID & Server akun Anda, klik avatar Anda di pojok kiri
+          atas layar dan buka tab Info Umum. Contoh: 12345678 (9864), maka ID
+          adalah 12345678 dan Server adalah 9864
+        </p>
+      </div>
+    </section>
+
+    <section class="pricing-data">
+      <div class="pricing-header"><span>2</span> Pilih Nominal</div>
+
+      <div class="pricing-items">
+        <div class="card">
+          <div class="card-content">
+            <label>5 (5+0) Diamonds</label>
+            <span class="price">Rp 4.509</span>
+          </div>
+          <div class="icon">
+            <img src="foto game/diamond.png" alt="Diamond" />
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <label>10 (9+1) Diamonds</label>
+            <span class="price">Rp 7.018</span>
+          </div>
+          <div class="icon">
+            <img src="foto game/diamond.png" alt="Diamond" />
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <label>12 (11+1) Diamonds</label>
+            <span class="price">Rp 8.526</span>
+          </div>
+          <div class="icon">
+            <img src="foto game/diamond.png" alt="Diamond" />
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <label>14 (13+1) Diamonds</label>
+            <span class="price">Rp 15.547</span>
+          </div>
+          <div class="icon">
+            <img src="foto game/diamond.png" alt="Diamond" />
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-info">
+        <p>Pilih paket yang diinginkan sesuai nominal di atas.</p>
+      </div>
+    </section>
+
+    <!-- Section Pilihan Pembayaran -->
+    <section class="payment-data">
+      <div class="payment-header"><span>4</span> Pilih Pembayaran</div>
+      <div class="payment-options">
+        <div class="payment-option">
+          <input
+            type="radio"
+            id="payment-bank"
+            name="payment"
+            value="Bank Transfer"
+          />
+          <label for="payment-bank">Bank Transfer</label>
+        </div>
+        <div class="payment-option">
+          <input
+            type="radio"
+            id="payment-ewallet"
+            name="payment"
+            value="E-Wallet"
+          />
+          <label for="payment-ewallet">E-Wallet</label>
+        </div>
+        <div class="payment-option">
+          <input
+            type="radio"
+            id="payment-cc"
+            name="payment"
+            value="Credit Card"
+          />
+          <label for="payment-cc">Credit Card</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Detail Kontak -->
+    <section class="contact-data">
+      <div class="contact-header"><span>5</span> Detail Kontak</div>
+      <div class="contact-form">
+        <div class="form-group">
+          <label for="contact-name">Nama</label>
+          <input
+            type="text"
+            id="contact-name"
+            placeholder="Masukkan Nama Anda"
+          />
+        </div>
+        <div class="form-group">
+          <label for="contact-phone">Nomor Telepon</label>
+          <input
+            type="text"
+            id="contact-phone"
+            placeholder="Masukkan Nomor Telepon"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Kode Promo -->
+    <section class="promo-data">
+      <div class="promo-header"><span>6</span> Kode Promo</div>
+      <div class="promo-form">
+        <input
+          type="text"
+          id="promo-code"
+          placeholder="Masukkan Kode Promo (opsional)"
+        />
+      </div>
+    </section>
+
+    <!-- Button Bayar -->
+    <section class="pay-now">
+      <button class="btn-pay">Bayar Sekarang</button>
+    </section>
+
+    <!-- Modal Pembayaran Berhasil -->
+    <div
+      class="modal fade"
+      id="paymentSuccessModal"
+      tabindex="-1"
+      aria-labelledby="paymentSuccessModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="paymentSuccessModalLabel">
+              Pembayaran Berhasil
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Pembayaran Anda telah berhasil diproses. Terima kasih telah
+            menggunakan layanan kami!
+          </div>
+          <div class="modal-footer">
+            <a href="transaksi.html" class="btn btn-primary">Lihat Transaksi</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      document.querySelector(".btn-pay").addEventListener("click", function () {
+        var myModal = new bootstrap.Modal(
+          document.getElementById("paymentSuccessModal")
+        );
+        myModal.show();
+      });
+    </script>
+  </body>
+</html>

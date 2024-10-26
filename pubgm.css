@@ -1,0 +1,393 @@
+
+.banner {
+  position: relative;
+  width: 100%;
+}
+
+.banner-content {
+  position: relative;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-text {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.promo-text span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f4b400;
+}
+
+.promo-text p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 600px) {
+  .promo-text {
+    padding: 8px 15px; /* Kurangi padding */
+  }
+
+  .promo-text span {
+    font-size: 20px; /* Kurangi ukuran font */
+  }
+
+  .promo-text p {
+    font-size: 16px; /* Kurangi ukuran font */
+  }
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.game-details {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #2d2d2d;
+}
+
+.game-thumbnail {
+  width: 120px;
+  border-radius: 10px;
+}
+
+.game-info {
+  margin-left: 20px;
+  color: #fff;
+}
+
+.game-info h2 {
+  font-size: 24px;
+}
+
+.game-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.game-features span {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+
+
+.account-data {
+  background-color: #3a3a3a; /* Warna latar belakang */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto 0 auto; /* Tambahkan margin-top 20px */
+}
+
+.account-header {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  background-color: #a58e6e; /* Warna latar header */
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  font-weight: bold;
+}
+
+.account-header span {
+  background-color: #c3a87b; /* Warna kotak angka */
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.account-form {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d; /* Warna latar form */
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.form-group label {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #515151;
+  color: white;
+  font-size: 14px;
+}
+
+.account-info {
+  margin-top: 10px;
+  color: #ccc; /* Warna teks deskripsi */
+  font-size: 14px;
+}
+
+.account-info p {
+  margin: 0;
+}
+
+
+
+.pricing-data {
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto 0 auto;
+}
+
+.pricing-header {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  background-color: #a58e6e;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  font-weight: bold;
+}
+
+.pricing-header span {
+  background-color: #c3a87b;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.pricing-items {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px;
+  background-color: #2d2d2d;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px; /* Tambahkan margin kiri */
+  margin-right: 10px; /* Tambahkan margin kanan */
+  max-width: 100%; /* Pastikan lebar card tidak melebihi kontainer */
+  box-sizing: border-box; /* Untuk memastikan padding tidak menambah lebar card */
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content label {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card-content .price {
+  color: #333;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.pricing-info {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.pricing-info p {
+  margin: 0;
+}
+
+/* Responsive rules */
+@media (max-width: 600px) {
+  .pricing-items {
+    grid-template-columns: 1fr; /* Stack cards on small screens */
+  }
+}
+
+
+
+.payment-data,
+.contact-data,
+.promo-data,
+.pay-now {
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto 0 auto;
+}
+
+.payment-header,
+.contact-header,
+.promo-header {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  background-color: #a58e6e;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  font-weight: bold;
+}
+
+.payment-header span,
+.contact-header span,
+.promo-header span {
+  background-color: #c3a87b;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  background-color: #2d2d2d;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.payment-option {
+  margin-bottom: 10px;
+}
+
+.payment-option label {
+  color: white;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.payment-option input {
+  margin-right: 10px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.form-group label {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #515151;
+  color: white;
+  font-size: 14px;
+}
+
+.promo-form {
+  background-color: #2d2d2d;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.promo-form input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: #515151;
+  color: white;
+  font-size: 14px;
+}
+
+.pay-now {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-pay {
+  background-color: #f4b400;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-pay:hover {
+  background-color: #d4a000;
+}

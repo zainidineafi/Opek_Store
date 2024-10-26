@@ -1,0 +1,149 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #2C2C2C;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+    max-width: 1200px;
+}
+
+.game-logo img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.game-details {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.game-details h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    margin-top: 15px;
+}
+
+.icon-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.icon-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.step-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.input-container input {
+    background-color: #444;
+    border: 1px solid #555;
+    color: #FFF;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+.category-container {
+    display: flex;
+    margin: 10px 0;
+}
+
+.category {
+    background-color: #444;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.item {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.payment-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.payment-container button {
+    background-color: #444;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.confirm-btn {
+    background-color: #6A1B9A;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}

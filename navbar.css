@@ -1,0 +1,95 @@
+.navbar-custom {
+  background-color: #1e1e1e;
+  padding: 10px;
+}
+
+.navbar-custom .navbar-brand img {
+  height: 40px;
+}
+
+.navbar-custom .nav-link {
+  color: #e5e5e5;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #d5a369;
+}
+
+.navbar-custom .nav-item .btn {
+  color: #e5e5e5;
+  border: 1px solid #6c757d;
+  border-radius: 6px;
+}
+
+.navbar-custom .nav-item .btn:hover {
+  background-color: #d5a369;
+  color: #000;
+}
+
+.btn-daftar {
+  background-color: #d5a369;
+  color: #fff;
+}
+
+.btn-daftar:hover {
+  background-color: #c19355;
+}
+
+.dropdown-toggle::after {
+  color: #e5e5e5;
+}
+
+.navbar-custom .nav-link {
+  color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* memberikan jarak antara ikon dan teks */
+  position: relative;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #d5a369;
+}
+
+/* Garis bawah animasi saat hover */
+.navbar-custom .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #d5a369;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-custom .navbar-brand {
+  color: #ffffff;
+  position: relative;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.navbar-custom .navbar-brand:hover {
+  color: #d5a6e0; /* Warna ungu muda saat di-hover */
+}
+
+/* Efek garis bawah animasi */
+.navbar-custom .navbar-brand::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #d5a6e0; /* Warna garis ungu muda */
+  bottom: -3px; /* Posisikan sedikit di bawah teks */
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar-custom .navbar-brand:hover::after {
+  width: 100%;
+}

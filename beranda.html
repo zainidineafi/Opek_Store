@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda - Opeks Store</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="beranda.css" />
+    <link rel="stylesheet" href="navbar.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="beranda.html">Opeks Store</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto justify-content-center mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="beranda.html">
+                <i class="fas fa-home"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="produk.html">
+                <i class="fas fa-box-open"></i> Product
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="transaksi.html">
+                <i class="fas fa-receipt"></i> Transaction
+              </a>
+            </li>
+          </ul>
+          <a class="btn btn-outline-light me-2" href="login.html">Login</a>
+          <a class="btn btn-daftar" href="daftar.html">Register</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel Container -->
+    <section class="banner-custom">
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img src="foto game/ml.jpg" alt="Slide 1" />
+          <img
+            src="foto game/26f18577e90460da6c019ace5c9673d1.jpg"
+            alt="Slide 2"
+          />
+        </div>
+
+        <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+        <span class="next" onclick="changeSlide(1)">&#10095;</span>
+
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Judul Section -->
+    <div class="section-title">
+      <h2>🔥 Top Up Games Populer</h2>
+    </div>
+
+    <!-- Cards Section -->
+    <section class="card-custom">
+      <a href="mobile_legends.html" class="card">
+        <img src="foto game/ml-icon.jpg" alt="Mobile Legends" />
+        <div class="card-info">
+          <p class="card-title">Mobile Legends</p>
+        </div>
+        <div class="price-tag">$1</div>
+      </a>
+    
+      <a href="free_fire.html" class="card">
+        <img src="foto game/ff-icon.jpg" alt="Free Fire" />
+        <div class="card-info">
+          <p class="card-title">Free Fire</p>
+        </div>
+        <div class="price-tag">$1</div>
+      </a>
+    
+      <a href="honor_of_kings.html" class="card">
+        <img src="foto game/hok-icon.jpg" alt="Honor Of Kings" />
+        <div class="card-info">
+          <p class="card-title">Honor Of Kings</p>
+        </div>
+        <div class="price-tag">$1</div>
+      </a>
+    
+      <a href="pubgm.html" class="card">
+        <img src="foto game/pubg-icon.jpg" alt="PUBG Mobile" />
+        <div class="card-info">
+          <p class="card-title">PUBG Mobile</p>
+        </div>
+        <div class="price-tag">$1</div>
+      </a>
+    
+      <a href="pb.html" class="card">
+        <img src="foto game/pb-icon.jpg" alt="Point Blank" />
+        <div class="card-info">
+          <p class="card-title">Point Blank</p>
+        </div>
+        <div class="price-tag">$1</div>
+      </a>
+    </section>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      // Auto-slide every 3 seconds
+      let autoSlide = setInterval(() => changeSlide(1), 3000);
+
+      function changeSlide(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+        // Reset the auto-slide timer when manually changing slides
+        clearInterval(autoSlide);
+        autoSlide = setInterval(() => changeSlide(1), 3000);
+      }
+
+      function showSlides(n) {
+        let i;
+        const slides = document.querySelectorAll(".carousel-slide img");
+        const dots = document.querySelectorAll(".dot");
+        if (n > slides.length) slideIndex = 1;
+        if (n < 1) slideIndex = slides.length;
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+    <script>
+      // Ambil elemen hamburger dan sidebar
+      const hamburger = document.querySelector(".hamburger");
+      const sidebar = document.getElementById("sidebar");
+
+      // Fungsi untuk toggle sidebar
+      hamburger.addEventListener("click", () => {
+        sidebar.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
